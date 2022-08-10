@@ -3149,21 +3149,7 @@ Project
   position: relative;
 }
 
-.p-course-price-card__more::before {
-  -webkit-transform: translateX(-50%);
-  border-bottom: 21px solid transparent;
-  border-left: 116px solid transparent;
-  border-right: 116px solid transparent;
-  border-top: 21px solid #F1EEE2;
-  content: "";
-  display: block;
-  height: 0;
-  left: 50%;
-  position: absolute;
-  top: 14px;
-  transform: translateX(-50%);
-  width: 0;
-}
+
 
 .p-course-price-card__sub {
   border: 0.5px solid #000;
@@ -5048,13 +5034,7 @@ Project
     padding: 44px 50px 40px;
   }
 
-  .p-course-price-card__more::before {
-    border-bottom: 21px solid transparent;
-    border-left: 116px solid transparent;
-    border-right: 116px solid transparent;
-    border-top: 21px solid #F1EEE2;
-    top: 14px;
-  }
+  
 
   .p-course-price-card__sub {
     margin-bottom: 26px;
