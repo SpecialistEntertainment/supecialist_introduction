@@ -2908,8 +2908,8 @@ Project
 }
 
 .p-course-activities.m-leadership .p-course-activities__content:nth-child(2) .p-course-activities-item__num {
-  background-color: #B9A351;
-  color: #fff;
+  background-color: #FF8227;
+  color: #ffffff;
 }
 
 .p-course-activities-item__image {
@@ -2918,7 +2918,8 @@ Project
 }
 
 .p-course-activities-item__num {
-  background-color: #FBFBFB;
+  background-color: #3C7EFF;
+  color: #ffffff;
   bottom: 0;
   display: block;
   font-family: azo-sans-web, sans-serif;
@@ -5703,7 +5704,7 @@ Project
 
 .desktop-header-wrapper .trial-button {
   margin-left: 16px;
-  background-color: #C0506B;
+  background-color: #FF8227;
 }
 
 .desktop-header-wrapper .corporate-button {
@@ -6474,8 +6475,8 @@ Project
 
 .first-view-trial-btn-wrapper .trial-button {
   text-align: center;
-  background-color: #C0506B;
-  box-shadow: 0px 6.273105621337891px 0px 0px #A33650;
+  background-color: #FF8227;
+  box-shadow: 0px 6.273105621337891px 0px 0px #AE6430;
 }
 
 @media only screen and (max-width: 450px) {
@@ -6550,8 +6551,8 @@ Project
   font-size: 16px;
   position: absolute;
   background-color: white;
-  border: 2px solid #C0506B;
-  color: #C0506B;
+  border: 2px solid #FF8227;
+  color: #FF8227;
   top: -18px;
   height: 36px;
   margin: 0 auto;
@@ -6727,13 +6728,13 @@ Project
 
 .desktop-header-wrapper .trial-button {
   margin-left: 16px;
-  background-color: #C0506B;
+  background-color: #FF8227;
 }
 
 .first-view-trial-btn-wrapper .trial-button {
   text-align: center;
-  background-color: #C0506B;
-  box-shadow: 0px 6.273105621337891px 0px 0px #A33650;
+  background-color: #FF8227;
+  box-shadow: 0px 6.273105621337891px 0px 0px #AE6430;
 }
 
 @media only screen and (min-width: 450px) {
@@ -6788,8 +6789,8 @@ Project
   font-size: 16px;
   position: absolute;
   background-color: white;
-  border: 2px solid #C0506B;
-  color: #C0506B;
+  border: 2px solid #FF8227;
+  color: #FF8227;
   top: -18px;
   height: 36px;
   margin: 0 auto;
@@ -8205,12 +8206,12 @@ padding-left: 100px !important;
 }
 
 .accordion-menu h2.active {
-  background: #101f33;
+  background: #3C7EFF;
   color: #ffffff;
 }
 
 .accordion-menu h2:after {
-  content: '\E831';
+  content: '✔';
   position: absolute;
   top: 50%;
   left: 10px;
@@ -8325,8 +8326,8 @@ padding-left: 100px !important;
 }
 #s_donate_body ul.qa li p.ttl span.icn {
 	display: inline-block;
-	width: 58px;
- color: #00ab8d;
+	
+ color: #3C7EFF;
  font-size: 1.2em;
  font-style: italic;
  font-weight: 500;
