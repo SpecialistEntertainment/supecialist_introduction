@@ -2904,7 +2904,11 @@ Project
 }
 
 .p-course-activities.m-leadership .p-course-activities__subheading::before {
-  background-color: #B9A351;
+  background-color: #3C7EFF;
+}
+
+.p-course-activities.m-leadership .p-course-activities__subheading_2::before {
+  background-color: #FF8227;
 }
 
 .p-course-activities.m-leadership .p-course-activities__content:nth-child(2) .p-course-activities-item__num {
