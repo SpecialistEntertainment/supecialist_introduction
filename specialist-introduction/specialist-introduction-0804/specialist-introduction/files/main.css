@@ -767,7 +767,7 @@ body.is-fixed {
 }
 
 .l-section {
-  padding: 72px 0;
+  padding: 0;
 }
 
 /* -----------------------------------------------------------------
@@ -2950,7 +2950,7 @@ Project
 }
 
 .p-course-voice {
-  padding-bottom: 0 !important;
+  padding-bottom: 80px !important;
 }
 
 .p-course-voice__list {
@@ -3081,6 +3081,10 @@ Project
 .p-course-voice-item.m-leadership .p-course-voice-item__subtitle span {
   background-color: #B9A351;
   color: #fff;
+}
+
+.p-course-price {
+  margin-bottom: 80px;
 }
 
 .p-course-price__card {
@@ -3929,7 +3933,7 @@ Project
   }
 
   .l-section {
-    padding: 160px 0;
+    padding: 0;
   }
 
   .c-section-heading__en {
@@ -4963,7 +4967,7 @@ Project
   }
 
   .p-course-voice {
-    padding-top: 184px;
+    padding-top: 0;
   }
 
   .p-course-voice__inner {
