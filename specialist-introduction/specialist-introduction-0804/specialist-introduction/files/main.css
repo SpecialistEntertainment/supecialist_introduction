@@ -3008,11 +3008,13 @@ Project
   margin: 0 0 8px;
 }
 
+/*
 .p-course-voice-item__subtitle span {
   background-color: #FFFF00;
   display: inline;
   padding: 0;
 }
+*/
 
 .p-course-voice-item__desc {
   font-size: clamp(12px, 0.9027777778vw, 13px);
@@ -3074,13 +3076,15 @@ Project
   border-left-color: #fff;
 }
 
+/*
 .p-course-voice-item.m-career .p-course-voice-item__subtitle span {
   background-color: #FFFF00;
 }
+*/
 
 .p-course-voice-item.m-leadership .p-course-voice-item__subtitle span {
-  background-color: #B9A351;
-  color: #fff;
+  color: #3C7EFF;
+  font-weight: bolder;
 }
 
 .p-course-price {
@@ -7346,6 +7350,20 @@ padding-left: 100px !important;
     padding-right: 200px !important;
   }
 
+@media only screen and (min-width: 450px) and (max-width: 1200px) {
+  .ut-ps200 {
+    padding-left: 30px !important;
+      padding-right: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .ut-ps200 {
+    padding-left: 30px !important;
+      padding-right: 30px !important;
+  }
+}
+
 .ut-lead4 {
   font-size: 34px;
   line-height: 1.5;
@@ -7362,6 +7380,18 @@ padding-left: 100px !important;
 
 .ut-mb40 {
   margin-bottom: 40px !important;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 1200px) {
+  .sp-css-activity1 {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .sp-css-activity1 {
+    margin-bottom: 0px !important;
+  }
 }
 
 .background-gray {
@@ -7487,9 +7517,7 @@ padding-left: 100px !important;
     margin-top: 40px !important;
 }
 
-.ut-mb40 {
-    margin-bottom: 40px !important;
-}
+
 
 .ut-mt50 {
     margin-top: 50px !important;
@@ -7721,10 +7749,12 @@ padding-left: 100px !important;
 	padding-right: 100px !important;
 }
 
+/*
 .ut-ps200 {
 	padding-left: 200px !important;
 	padding-right: 200px !important;
 }
+*/
 
 .ut-pa10 {
 	padding: 10px !important;
