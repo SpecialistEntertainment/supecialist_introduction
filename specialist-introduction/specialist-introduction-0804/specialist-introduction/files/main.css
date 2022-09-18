@@ -6917,13 +6917,17 @@ Project
 .video-wrapper {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          */
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
@@ -6935,29 +6939,14 @@ Project
 }
 
 .video-wrapper .video {
-  height: 100%;
-}
-
-.video-wrapper {
-  overflow: hidden;
-}
-
-.chunk1 .video-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.video-wrapper iframe, .video-wrapper object, .video-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
 }
 
 .video-wrapper img {
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: 800px;
+  top: 0;
+  left: 0;
 }
 
 @media only screen and (min-width: 450px) {
