@@ -1342,23 +1342,23 @@ Project
 }
 
 .p-home-mv__lead {
-  color: #fff;
-  font-size: clamp(15px, 1.5972222222vw, 23px);
+  color: #444444;
+  font-size: clamp(18px, 1.5972222222vw, 27px);
   font-weight: bold;
   letter-spacing: 0.1em;
   line-height: 2;
   margin: 0 auto 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .p-home-mv__subtitle {
-  color: #fff;
+  color: #444444;
   font-size: clamp(25px, 4.1666666667vw, 60px);
   font-weight: bold;
   letter-spacing: 0.05em;
   line-height: 1.372;
   margin: 0 auto 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .p-home-mv__by {
@@ -6320,26 +6320,6 @@ Project
   width: 100%;
 }
 
-.p-home-mv__lead {
-  color: #fff;
-  font-size: clamp(15px, 1.5972222222vw, 23px);
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  line-height: 2;
-  margin: 0 auto 10px;
-  text-align: center;
-}
-
-.p-home-mv__subtitle {
-  color: #fff;
-  font-size: clamp(25px, 4.1666666667vw, 60px);
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  line-height: 1.372;
-  margin: 0 auto 24px;
-  text-align: center;
-}
-
 .p-home-mv__by {
   color: #fff;
   font-family: azo-sans-web, sans-serif;
@@ -6446,13 +6426,7 @@ Project
   width: 100%;
 }
 
-.career-image img {
-  width: 100%;
-}
 
-.first-view .test-career-image {
-  display: none;
-}
 
 .first-view-note {
   font-style: normal;
@@ -6485,7 +6459,7 @@ Project
 
 .first-view {
   width: 100%;
-  height: calc(93vh);
+  height: 888px;
   min-height: 717px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6506,7 +6480,7 @@ Project
 }
 
 .first-view-trial-btn-wrapper .trial-button {
-  text-align: center;
+  text-align: right;
   background-color: #FF8227;
   box-shadow: 0px 6.273105621337891px 0px 0px #AE6430;
 }
@@ -6602,9 +6576,9 @@ Project
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   z-index: 2;
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
 }
@@ -6762,76 +6736,6 @@ Project
   background-color: #FF8227;
 }
 
-.first-view-trial-btn-wrapper .trial-button {
-  text-align: center;
-  background-color: #FF8227;
-  box-shadow: 0px 6.273105621337891px 0px 0px #AE6430;
-}
-
-@media only screen and (min-width: 450px) {
-  .first-view-trial-btn-wrapper .trial-button {
-    width: 385px;
-    margin: 0 auto;
-    font-size: 20px;
-  }
-
-  .first-view-trial-btn-wrapper .trial-button:not(.first-view .with-label) {
-    padding: 32px 0 28px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .first-view-trial-btn-wrapper .trial-button {
-    width: calc(85.33333vw);
-    margin: 0 auto;
-    font-size: calc(4.8vw);
-  }
-}
-
-.first-view-trial-btn-wrapper .trial-button div:first-child  {
-  display: flex;
-  align-items: center;
-}
-
-@media only screen and (min-width: 450px) {
-  .first-view-trial-btn-wrapper .trial-button div:first-child {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .first-view-trial-btn-wrapper .trial-button div:first-child {
-    font-size: calc(4.8vw);
-    padding-right: calc(2.13333vw);
-    padding-top: 6px;
-  }
-}
-
-.first-view-trial-btn-wrapper .trial-button div:last-child {
-  border-left: 7px solid white;
-  border-right: 7px solid transparent;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  top: 44px;
-}
-
-
-.first-view-trial-btn-wrapper .trial-button span {
-  font-size: 16px;
-  position: absolute;
-  background-color: white;
-  border: 2px solid #FF8227;
-  color: #FF8227;
-  top: -18px;
-  height: 36px;
-  margin: 0 auto;
-  line-height: 31px;
-  border-radius: 50px;
-  width: auto;
-  padding: 1px 24px 0;
-  text-align: center;
-}
-
 .trial-button {
   display: block;
   text-decoration: none;
@@ -6917,8 +6821,8 @@ Project
 .video-wrapper {
   position: absolute;
   width: 100%;
-  height: auto;
-  top: 0;
+  height: 800px;
+  top: 88px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6933,18 +6837,9 @@ Project
      object-fit: cover;
 }
 
-.video-wrapper .video {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.video-wrapper .video {
-  height: 100%;
-}
-
 .video-wrapper img {
-  width: auto;
   height: 800px;
+  width: auto;
   top: 0;
   left: 0;
 }
@@ -8233,7 +8128,7 @@ padding-left: 100px !important;
   width: 100%;
 }
 
-.accordion-menu h2 {
+.accordion-menu p {
   position: relative;
   display: block;
   width: 100%;
@@ -8241,10 +8136,12 @@ padding-left: 100px !important;
   margin-bottom: 20px;
   padding: 0 0 0 50px;
   border: 1px solid #737d8b;
+  background: #3C7EFF;
+  color: #ffffff;
   border-radius: 4px;
   line-height: 70px;
-  cursor: pointer;
   font-size: 22px;
+  font-weight: bolder;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -8252,16 +8149,7 @@ padding-left: 100px !important;
   transition: all 0.3s;
 }
 
-.accordion-menu h2:hover {
-  background: #f5f6f7;
-}
-
-.accordion-menu h2.active {
-  background: #3C7EFF;
-  color: #ffffff;
-}
-
-.accordion-menu h2:after {
+.accordion-menu p:after {
   content: '✔';
   position: absolute;
   top: 50%;
@@ -8270,20 +8158,20 @@ padding-left: 100px !important;
   height: 30px;
   margin-top: -15px;
   border-radius: 50%;
-  background: #101f33;
+  background: #ffffff;
+  color: #101f33;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
   font-family: 'tsg-webfont';
   font-size: 20px;
-  color: #ffffff;
   -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.5, 1) 0s;
   -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.5, 1) 0s;
   -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.5, 1) 0s;
   -ms-transition: all 0.3s cubic-bezier(0.4, 0, 0.5, 1) 0s;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.5, 1) 0s;
 }
-
+/*
 .accordion-menu h2.active:after {
   background: #ffffff;
   color: #101f33;
@@ -8293,10 +8181,11 @@ padding-left: 100px !important;
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+*/
 
-/*
+
 @media only screen and (min-width: 450px) and (max-width: 1200px) {
-  .accordion-menu h2 {
+  .accordion-menu p {
     background: #3C7EFF;
     color: #ffffff;
     position: relative;
@@ -8310,7 +8199,6 @@ padding-left: 100px !important;
 @media only screen and (max-width: 450px) {
 
 }
-*/
 
 .accordion-menu-date {
   margin-left: 10px;
