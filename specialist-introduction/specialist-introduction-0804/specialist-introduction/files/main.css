@@ -1357,7 +1357,7 @@ Project
   font-weight: bold;
   letter-spacing: 0.05em;
   line-height: 1.372;
-  margin: 0 auto 24px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -4337,10 +4337,6 @@ Project
     letter-spacing: 0.2em;
   }
 
-  .p-home-mv__subtitle {
-    margin-bottom: 40px;
-  }
-
   .p-home-mv__by {
     margin-bottom: 95px;
   }
@@ -6422,11 +6418,17 @@ Project
 }
 
 .first-view-main {
-  max-width: 1165px;
-  width: 100%;
+  max-width: 1400px;
+  width: 90%;
 }
 
+.career-image {
+  width: 60%;
+}
 
+.first-view-trial-btn-wrapper {
+  width: 40%;
+}
 
 .first-view-note {
   font-style: normal;
@@ -6493,8 +6495,15 @@ Project
 }
 
 @media only screen and (min-width: 1200px) {
-  .first-view-trial-btn-wrapper {
-    margin-top: 62px;
+  .first-view-trial-btn-wrapper.first-view-trial-btn-wrapper-top {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .first-view-trial-btn-wrapper.first-view-trial-btn-wrapper-content {
+    margin: 0 auto;
+    margin-top: 50px;
   }
 }
 
@@ -6505,9 +6514,10 @@ Project
 }
 
 @media only screen and (min-width: 450px) {
-  .first-view-trial-btn-wrapper .trial-button {
+  .first-view-trial-btn-wrapper-content {
     width: 385px;
     margin: 0 auto;
+    margin-top: 50px;
     font-size: 20px;
   }
 
@@ -6517,9 +6527,10 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .first-view-trial-btn-wrapper .trial-button {
+  .first-view-trial-btn-wrapper-content {
     width: calc(85.33333vw);
     margin: 0 auto;
+    margin-top: 50px;
     font-size: calc(4.8vw);
   }
 }
@@ -6572,10 +6583,13 @@ Project
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  /*
       -ms-flex-direction: column;
           flex-direction: column;
+  */
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -6585,7 +6599,7 @@ Project
 
 @media only screen and (min-width: 1200px) {
   .first-view-main {
-    margin: -20px auto 0 auto;
+    margin: 70px auto 0 auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
   }
@@ -6842,6 +6856,7 @@ Project
   width: auto;
   top: 0;
   left: 0;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 450px) {
