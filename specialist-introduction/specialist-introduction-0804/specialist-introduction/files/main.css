@@ -6514,7 +6514,7 @@ Project
 }
 
 @media only screen and (min-width: 450px) {
-  .first-view-trial-btn-wrapper-content {
+  .first-view-trial-btn-wrapper-top, .first-view-trial-btn-wrapper-content {
     width: 385px;
     margin: 0 auto;
     margin-top: 50px;
