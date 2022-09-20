@@ -7329,6 +7329,12 @@ padding-left: 100px !important;
   background: rgba(247, 247, 247, 0.9);
 }
 
+@media only screen and (min-width: 1080px) {
+  #section-about-vision-text {
+    padding-left: 5%;
+  }
+}
+
 .section-inner-wide {
   position: relative;
   width: 100%;
@@ -7370,10 +7376,6 @@ padding-left: 100px !important;
 
 .half-box:nth-of-type(2) {
   padding-left: 20px;
-}
-
-#section-about-vision-text {
-  background: rgba(247, 247, 247, 0.9);
 }
 
 .people-makers .ut-lead span {
