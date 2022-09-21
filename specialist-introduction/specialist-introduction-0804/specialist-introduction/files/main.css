@@ -648,6 +648,50 @@ body.is-fixed {
 
 .l-footer {
   position: relative;
+  background-color: black;
+  color: white;
+}
+
+.l-footer_body {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.l-footer__widget-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-footer__nav {
+  display: flex;
+}
+
+.l-footer__nav-site {
+  padding-right: 30px;
+}
+
+.l-footer_logo {
+  width: 25%;
+}
+
+.l-footer_logo img {
+  display: block;
+  width: 100%;
+}
+
+.l-footer_footer {
+  height: 40px;
+}
+
+.l-footer_copy {
+
+}
+
+.l-footer_footer .l-footer_copy .c-copyright p {
+  font-size: 11px;
+  text-align: center;
 }
 
 .l-footer__copy {
