@@ -7333,11 +7333,6 @@ padding-left: 100px !important;
       padding-right: 20px !important;
   }
 }
-
-.ut-lead4 {
-  font-size: 34px;
-  line-height: 1.5;
-}
   
   .ut-lead {
   font-size: 16px;
@@ -7780,9 +7775,31 @@ padding-left: 100px !important;
 	line-height: 1.5;
 }
 
+
 .ut-lead4 {
-    font-size: 34px;
+  font-size: 34px;
 	line-height: 1.5;
+}
+
+@media only screen and (min-width: 1200px) {
+  .ut-lead4 {
+    font-size: 34px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 1199px) {
+  .ut-lead4 {
+    font-size: 34px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .ut-lead4 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
 }
 
 .ut-lh1 {
@@ -8468,7 +8485,7 @@ padding-left: 100px !important;
 	 vertical-align: top;
 	}
 	#s_donate_body ul.qa li p.a {
-		font-size: 1.2em;
+		font-size: 1.0em;
 	}
 
 }
