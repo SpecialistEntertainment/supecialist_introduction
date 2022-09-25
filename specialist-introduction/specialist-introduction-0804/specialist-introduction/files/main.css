@@ -660,16 +660,18 @@ body.is-fixed {
 }
 
 .l-footer__widget-area {
-  display: flex;
-  justify-content: space-between;
+  
 }
 
 .l-footer__nav {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .l-footer__nav-site {
   padding-right: 30px;
+  box-sizing: border-box;
+  width: 25%;
 }
 
 .l-footer_logo {
