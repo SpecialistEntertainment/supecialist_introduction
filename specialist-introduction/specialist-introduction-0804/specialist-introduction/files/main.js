@@ -59,6 +59,50 @@ jQuery(function($) {
     $("body").removeClass("is-fixed");
   });
 
+  // FAQのアコーディオン
+  $('.faq-list-item').click(function() {
+    var $answer = $(this).next('.answer');
+    if($answer.hasClass('open')) { 
+      $answer.removeClass('open');
+      // slideUpメソッドを用いて、$answerを隠してください
+      $answer.slideUp();
+
+      // 子要素のspanタグの中身をtextメソッドを用いて書き換えてください
+      $(this).find('.icn-open').text('+');
+      
+    } else {
+      $answer.addClass('open'); 
+      // slideDownメソッドを用いて、$answerを表示してください
+      $answer.slideDown();
+      
+      // 子要素のspanタグの中身をtextメソッドを用いて書き換えてください
+      $(this).find('.icn-open').text('－');
+      
+    }
+  });
+
+
+  // FAQのアコーディオン
+  $('.add-faq-btn').click(function() {
+    var $addfaq = $(this).next('.add-faq');
+    if($addfaq.hasClass('open-faq')) { 
+      $addfaq.removeClass('open-faq');
+      // slideUpメソッドを用いて、$answerを隠してください
+      $addfaq.slideUp();
+
+      // 子要素のspanタグの中身をtextメソッドを用いて書き換えてください
+      $('.add-faq-btn').css('display', 'block');
+      
+    } else {
+      $addfaq.addClass('open-faq'); 
+      // slideDownメソッドを用いて、$answerを表示してください
+      $addfaq.slideDown();
+      
+      // 子要素のspanタグの中身をtextメソッドを用いて書き換えてください
+      $('.add-faq-btn').css('display', 'none');
+      
+    }
+  });
   // 一定スクロールで変化
   $(window).on('scroll', function(){
     if ( $(window).scrollTop() > $('.js-mv').height()*0.8 ) {
