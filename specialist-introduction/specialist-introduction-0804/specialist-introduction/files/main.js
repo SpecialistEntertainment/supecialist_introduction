@@ -38,6 +38,16 @@ jQuery(function($) {
     });
   });
 
+  $(".openbtn7").click(function () {
+    $(this).toggleClass('active');
+    $('.sidebar-overlay').toggleClass('open');
+    $('.sidebar').toggleClass('open');
+});
+
+$(".openbtn1").click(function () {
+  $(this).toggleClass('active');
+});
+
   // gnav
   $gnavBtn.on("click", function() {
     $(this).toggleClass('is-open');
