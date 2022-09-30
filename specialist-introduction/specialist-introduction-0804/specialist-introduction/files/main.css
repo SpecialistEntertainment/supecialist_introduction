@@ -691,6 +691,27 @@ body.is-fixed {
 
 }
 
+@media screen and (max-width: 480px) {
+  .l-footer__nav {
+    flex-direction: column;
+  }
+  
+  .l-footer__nav-site {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  
+  .l-footer_logo {
+    width: 100%;
+  }
+  
+  .l-footer_logo img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
 .l-footer_footer .l-footer_copy .c-copyright p {
   font-size: 11px;
   text-align: center;
