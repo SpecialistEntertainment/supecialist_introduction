@@ -867,6 +867,89 @@ body.is-fixed {
 /*=======================
   heading
 =======================*/
+.openbtn7{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background-color:#ffffff;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+
+.openbtn7 .openbtn-area{
+    transition: all .4s;
+}
+
+.openbtn7 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: #fff;
+    width: 45%;
+  }
+
+
+.openbtn7 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn7 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn7 span:nth-of-type(3) {
+  top:31px;
+}
+
+
+/*activeクラスが付与されると
+線と周りのエリアが回転して×になる*/
+
+.openbtn7.active .openbtn-area{
+  transform: rotateY(-360deg);
+}
+
+.openbtn7.active {
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 11px;
+    margin-right: 12px;
+}
+
+.openbtn7.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn7.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn7.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
+
+
+@media screen and (max-width: 920px) {
+  .global-nav {
+  display: none;
+  }
+  
+    .footer-inner nav {
+      display: none;
+    }
+}
 
 .c-section-heading {
   line-height: 1;
@@ -5859,12 +5942,17 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .desktop-header-wrapper .header-item {
+  .desktop-header-wrapper .header-item, .header-item {
     margin-top: calc(6.4vw);
   }
 }
+.header-item {
+  font-family: europa,游ゴシック体,"Yu Gothic",YuGothic,Helvetica,Arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",Meiryo,メイリオ,sans-serif;
+  display: block;
+  cursor: pointer;
+}
 
-.desktop-header-wrapper .header-item-main-text {
+.desktop-header-wrapper .header-item-main-text, .header-item-main-text {
   font-weight: bold;
 }
 
@@ -5889,7 +5977,7 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .desktop-header-wrapper .header-item-main-text {
+ .header-item-main-text {
     font-family: europa, sans-serif;
     font-size: calc(5.6vw);
     letter-spacing: calc(0.47467vw);
@@ -5897,7 +5985,7 @@ Project
   }
 }
 
-.desktop-header-wrapper .header-item-sub-text {
+.desktop-header-wrapper .header-item-sub-text, .header-item-sub-text {
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
 }
 
@@ -5924,6 +6012,15 @@ Project
     letter-spacing: calc(0.47467vw);
     line-height: 1;
     margin-top: calc(2.13333vw);
+  }
+   .header-item-sub-text {
+    font-size: calc(3.2vw);
+    letter-spacing: calc(0.47467vw);
+    line-height: 1;
+    margin-top: calc(2.13333vw);
+  }
+  .sidebar-buttons {
+    margin-top: calc(10.66667vw);
   }
 }
 
@@ -6281,6 +6378,54 @@ Project
 
   .mobile-header {
     display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: calc(3.26667vw) 0 0 calc(4.26667vw);
+    align-items: center;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .openbtn7{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background-color: #ffffff;
+    cursor: pointer;
+      width: 50px;
+      height:50px;
+    border-radius: 5px;
+    z-index: 502;
+  }
+  
+  /*ボタン内側*/
+  
+  .openbtn7 .openbtn-area{
+      transition: all .4s;
+  }
+  
+  .openbtn7 span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 1.5px;
+      border-radius: 2px;
+    background: #000;
+      width: 45%;
+    }
+  
+  
+  .openbtn7 span:nth-of-type(1) {
+    top:15px; 
+  }
+  
+  .openbtn7 span:nth-of-type(2) {
+    top:23px;
+  }
+  
+  .openbtn7 span:nth-of-type(3) {
+    top:31px;
   }
 }
 
