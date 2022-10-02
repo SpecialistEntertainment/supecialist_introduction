@@ -6382,6 +6382,10 @@ Project
     height: 64px;
     padding: calc(3.26667vw) 0 0 calc(4.26667vw);
     align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
   }
 
   .buttons {
@@ -6735,7 +6739,7 @@ Project
 @media only screen and (max-width: 450px) {
   .first-view {
     height: 80vh;
-    min-height: 568px;
+    min-height: 800px;
   }
 }
 
@@ -6796,6 +6800,13 @@ Project
     font-size: calc(4.8vw);
     padding-right: calc(2.13333vw);
     padding-top: 6px;
+  }
+  .career-image {
+    width: 45%;
+  }
+  
+  .first-view-trial-btn-wrapper {
+    width: 55%;
   }
 }
 
@@ -6859,6 +6870,10 @@ Project
 @media only screen and (max-width: 450px) {
   .first-view .first-view-main {
     margin: calc(8vw) auto 0;
+  }
+  .first-view-trial-btn-wrapper .trial-button span {
+    font-size: 1px;
+    
   }
 }
 
@@ -7075,6 +7090,9 @@ Project
     margin: 0 auto;
     width: calc(86.93333vw);
   }
+  .video-wrapper {
+    top: 0 !important;
+  }
 }
 
 .video-wrapper {
@@ -7167,6 +7185,7 @@ Project
     letter-spacing: calc(0.44533vw);
     line-height: calc(7.2vw);
     font-weight: 600;
+    text-align: center;
   }
 }
 
