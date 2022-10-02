@@ -7110,6 +7110,7 @@ Project
     width: calc(86.93333vw);
   }
   .video-wrapper {
+  position: absolute;
     top: 0 !important;
   }
 }
