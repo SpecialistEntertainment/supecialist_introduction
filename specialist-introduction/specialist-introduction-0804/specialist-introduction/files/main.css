@@ -6500,13 +6500,13 @@ Project
 
 @media only screen and (min-width: 450px) and (max-width: 1200px) {
   .sidebar-inner {
-    padding: 0 32px 32px;
+    padding: calc(10.53333vw) 32px 32px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .sidebar-inner {
-    padding: 0 calc(8.53333vw) calc(4.26667vw);
+    padding: calc(10.53333vw) calc(8.53333vw) calc(4.26667vw);
   }
 }
 
@@ -6652,6 +6652,12 @@ Project
 .p-home-mv-deadline__course.m-course-2 {
   border-left: 3px solid #C7B368;
   color: #9F8D51;
+}
+
+.client-section {
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 0;
 }
 
 .first-view-main {
