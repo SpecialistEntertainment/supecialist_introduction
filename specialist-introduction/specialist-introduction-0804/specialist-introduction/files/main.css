@@ -3744,7 +3744,7 @@ Project
   display: flex;
   flex-wrap: wrap;
   gap: 36px 13px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .p-entry-flow__item {
