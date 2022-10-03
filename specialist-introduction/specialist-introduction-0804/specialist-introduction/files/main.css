@@ -6701,9 +6701,16 @@ Project
     margin: 0 auto;
   }  
 }
-
 .first-view {
-  width: 100%;
+  
+  position: relative;
+  padding: 0;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+}
+
+@media screen and (min-width: 451px) {
+  .first-view {
+    width: 100%;
   height: 888px;
   min-height: 717px;
   display: -webkit-box;
@@ -6719,9 +6726,7 @@ Project
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  padding: 0;
-  font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -6759,6 +6764,10 @@ Project
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  }
+  .first-view-sp-image {
+    position: absolute;
+    top: 0;
   }
 }
 
