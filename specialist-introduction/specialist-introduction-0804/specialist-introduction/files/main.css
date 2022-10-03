@@ -691,6 +691,27 @@ body.is-fixed {
 
 }
 
+@media screen and (max-width: 480px) {
+  .l-footer__nav {
+    flex-direction: column;
+  }
+  
+  .l-footer__nav-site {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  
+  .l-footer_logo {
+    width: 100%;
+  }
+  
+  .l-footer_logo img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
 .l-footer_footer .l-footer_copy .c-copyright p {
   font-size: 11px;
   text-align: center;
@@ -846,6 +867,89 @@ body.is-fixed {
 /*=======================
   heading
 =======================*/
+.openbtn7{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background-color:#ffffff;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+
+.openbtn7 .openbtn-area{
+    transition: all .4s;
+}
+
+.openbtn7 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: #fff;
+    width: 45%;
+  }
+
+
+.openbtn7 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn7 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn7 span:nth-of-type(3) {
+  top:31px;
+}
+
+
+/*activeクラスが付与されると
+線と周りのエリアが回転して×になる*/
+
+.openbtn7.active .openbtn-area{
+  transform: rotateY(-360deg);
+}
+
+.openbtn7.active {
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 11px;
+    margin-right: 12px;
+}
+
+.openbtn7.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn7.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn7.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
+
+
+@media screen and (max-width: 920px) {
+  .global-nav {
+  display: none;
+  }
+  
+    .footer-inner nav {
+      display: none;
+    }
+}
 
 .c-section-heading {
   line-height: 1;
@@ -3640,7 +3744,7 @@ Project
   display: flex;
   flex-wrap: wrap;
   gap: 36px 13px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .p-entry-flow__item {
@@ -3659,7 +3763,7 @@ Project
   transform: translate(-50%, -50%);
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   z-index: 1;
 }
 
@@ -3687,7 +3791,7 @@ Project
   transform: translate(-50%, -50%);
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 .p-entry-price {
@@ -5838,12 +5942,17 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .desktop-header-wrapper .header-item {
+  .desktop-header-wrapper .header-item, .header-item {
     margin-top: calc(6.4vw);
   }
 }
+.header-item {
+  font-family: europa,游ゴシック体,"Yu Gothic",YuGothic,Helvetica,Arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",Meiryo,メイリオ,sans-serif;
+  display: block;
+  cursor: pointer;
+}
 
-.desktop-header-wrapper .header-item-main-text {
+.desktop-header-wrapper .header-item-main-text, .header-item-main-text {
   font-weight: bold;
 }
 
@@ -5868,7 +5977,7 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .desktop-header-wrapper .header-item-main-text {
+ .header-item-main-text {
     font-family: europa, sans-serif;
     font-size: calc(5.6vw);
     letter-spacing: calc(0.47467vw);
@@ -5876,7 +5985,7 @@ Project
   }
 }
 
-.desktop-header-wrapper .header-item-sub-text {
+.desktop-header-wrapper .header-item-sub-text, .header-item-sub-text {
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
 }
 
@@ -5903,6 +6012,15 @@ Project
     letter-spacing: calc(0.47467vw);
     line-height: 1;
     margin-top: calc(2.13333vw);
+  }
+   .header-item-sub-text {
+    font-size: calc(3.2vw);
+    letter-spacing: calc(0.47467vw);
+    line-height: 1;
+    margin-top: calc(2.13333vw);
+  }
+  .sidebar-buttons {
+    margin-top: calc(10.66667vw);
   }
 }
 
@@ -6260,6 +6378,58 @@ Project
 
   .mobile-header {
     display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: calc(3.26667vw) 0 0 calc(4.26667vw);
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .openbtn7{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background-color: #ffffff;
+    cursor: pointer;
+      width: 50px;
+      height:50px;
+    border-radius: 5px;
+    z-index: 502;
+  }
+  
+  /*ボタン内側*/
+  
+  .openbtn7 .openbtn-area{
+      transition: all .4s;
+  }
+  
+  .openbtn7 span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 1.5px;
+      border-radius: 2px;
+    background: #000;
+      width: 45%;
+    }
+  
+  
+  .openbtn7 span:nth-of-type(1) {
+    top:15px; 
+  }
+  
+  .openbtn7 span:nth-of-type(2) {
+    top:23px;
+  }
+  
+  .openbtn7 span:nth-of-type(3) {
+    top:31px;
   }
 }
 
@@ -6330,13 +6500,13 @@ Project
 
 @media only screen and (min-width: 450px) and (max-width: 1200px) {
   .sidebar-inner {
-    padding: 0 32px 32px;
+    padding: calc(10.53333vw) 32px 32px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .sidebar-inner {
-    padding: 0 calc(8.53333vw) calc(4.26667vw);
+    padding: calc(10.53333vw) calc(8.53333vw) calc(4.26667vw);
   }
 }
 
@@ -6484,6 +6654,12 @@ Project
   color: #9F8D51;
 }
 
+.client-section {
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
 .first-view-main {
   max-width: 1400px;
   width: 90%;
@@ -6525,9 +6701,16 @@ Project
     margin: 0 auto;
   }  
 }
-
 .first-view {
-  width: 100%;
+  
+  position: relative;
+  padding: 0;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+}
+
+@media screen and (min-width: 451px) {
+  .first-view {
+    width: 100%;
   height: 888px;
   min-height: 717px;
   display: -webkit-box;
@@ -6543,9 +6726,7 @@ Project
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  padding: 0;
-  font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -6568,8 +6749,25 @@ Project
 
 @media only screen and (max-width: 450px) {
   .first-view {
-    height: 80vh;
-    min-height: 568px;
+    width: 100%;
+  height: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  }
+  .first-view-sp-image {
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -6630,6 +6828,13 @@ Project
     font-size: calc(4.8vw);
     padding-right: calc(2.13333vw);
     padding-top: 6px;
+  }
+  .career-image {
+    width: 45%;
+  }
+  
+  .first-view-trial-btn-wrapper {
+    width: 55%;
   }
 }
 
@@ -6693,6 +6898,10 @@ Project
 @media only screen and (max-width: 450px) {
   .first-view .first-view-main {
     margin: calc(8vw) auto 0;
+  }
+  .first-view-trial-btn-wrapper .trial-button span {
+    font-size: 1px;
+    
   }
 }
 
@@ -6909,8 +7118,13 @@ Project
     margin: 0 auto;
     width: calc(86.93333vw);
   }
+  .video-wrapper {
+  position: absolute;
+    top: 0 !important;
+  }
 }
 
+@media screen and (min-width: 451px) {
 .video-wrapper {
   position: absolute;
   width: 100%;
@@ -6929,9 +7143,18 @@ Project
   -o-object-fit: cover;
      object-fit: cover;
 }
+	.video-wrapper img {
+  height: 800px;
+  width: auto;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+}
+
 
 .video-wrapper img {
-  height: 800px;
+  
   width: auto;
   top: 0;
   left: 0;
@@ -7001,6 +7224,7 @@ Project
     letter-spacing: calc(0.44533vw);
     line-height: calc(7.2vw);
     font-weight: 600;
+    text-align: center;
   }
 }
 
