@@ -6766,7 +6766,7 @@ Project
           justify-content: center;
   }
   .first-view-sp-image {
-    position: absolute;
+    
     top: 0;
   }
 }
@@ -6900,8 +6900,19 @@ Project
     margin: calc(8vw) auto 0;
   }
   .first-view-trial-btn-wrapper .trial-button span {
-    font-size: 1px;
-    
+    font-size: 12px;
+  position: absolute;
+  background-color: white;
+  border: 2px solid #FF8227;
+  color: #FF8227;
+  top: -18px;
+  height: 36px;
+  margin: 0 auto;
+  line-height: 31px;
+  border-radius: 50px;
+  width: auto;
+  padding: 1px 24px 0;
+  text-align: center;
   }
 }
 
