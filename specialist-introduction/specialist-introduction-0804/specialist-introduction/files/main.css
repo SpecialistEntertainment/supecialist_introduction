@@ -6028,7 +6028,7 @@ Project
   display: block;
   text-decoration: none;
   font-family: europa, 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-  background: #1F2C32;
+  background: #FF8227;
   color: white;
   position: relative;
   cursor: pointer;
@@ -6736,9 +6736,10 @@ Project
 }
 
 @media only screen and (max-width: 1199px) {
-  img.first-view-pc-image {
+  img.first-view-pc-image, .first-view-pc {
     display: none;
   }
+  
 }
 
 .first-view-trial-btn-wrapper .trial-button {
@@ -6750,7 +6751,7 @@ Project
 @media only screen and (max-width: 450px) {
   .first-view {
     width: 100%;
-  height: 570px;
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7053,7 +7054,7 @@ Project
   display: block;
   text-decoration: none;
   font-family: europa, 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-  background: #1F2C32;
+  background: #FF8227;
   color: white;
   position: relative;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.13);
@@ -7132,6 +7133,7 @@ Project
   .video-wrapper {
   position: absolute;
     top: 0 !important;
+    margin-top: 64px;
   }
 }
 
