@@ -6736,9 +6736,10 @@ Project
 }
 
 @media only screen and (max-width: 1199px) {
-  img.first-view-pc-image {
+  img.first-view-pc-image, .first-view-pc {
     display: none;
   }
+  
 }
 
 .first-view-trial-btn-wrapper .trial-button {
@@ -6750,7 +6751,7 @@ Project
 @media only screen and (max-width: 450px) {
   .first-view {
     width: 100%;
-  height: 570px;
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7132,6 +7133,7 @@ Project
   .video-wrapper {
   position: absolute;
     top: 0 !important;
+    margin-top: 64px;
   }
 }
 
