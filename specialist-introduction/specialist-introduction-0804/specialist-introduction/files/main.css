@@ -680,7 +680,11 @@ body.is-fixed {
 
 .l-footer_logo img {
   display: block;
-  width: 100%;
+  width: 200px;
+}
+
+.l-footer_logo_monkasyo {
+  margin-left: -48px;
 }
 
 .l-footer_footer {
@@ -690,6 +694,27 @@ body.is-fixed {
 .l-footer_copy {
 
 }
+
+@media screen and (max-width: 480px) {
+  .l-footer__nav {
+    flex-direction: column;
+  }
+  
+  .l-footer__nav-site {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  
+  .l-footer_logo {
+    width: 100%;
+  }
+  
+  .l-footer_logo img {
+    display: block;
+    width: 200px;
+  }
+}
+
 
 .l-footer_footer .l-footer_copy .c-copyright p {
   font-size: 11px;
@@ -846,6 +871,88 @@ body.is-fixed {
 /*=======================
   heading
 =======================*/
+.openbtn7{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background-color:#ffffff;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+
+.openbtn7 .openbtn-area{
+    transition: all .4s;
+}
+
+.openbtn7 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: #fff;
+    width: 45%;
+  }
+
+
+.openbtn7 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn7 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn7 span:nth-of-type(3) {
+  top:31px;
+}
+
+
+/*activeクラスが付与されると
+線と周りのエリアが回転して×になる*/
+
+.openbtn7.active .openbtn-area{
+  transform: rotateY(-360deg);
+}
+
+.openbtn7.active {
+  border: 1px solid #000;
+  border-radius: 50%;
+  
+}
+
+.openbtn7.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn7.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn7.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
+
+
+@media screen and (max-width: 920px) {
+  .global-nav {
+  display: none;
+  }
+  
+    .footer-inner nav {
+      display: none;
+    }
+}
 
 .c-section-heading {
   line-height: 1;
@@ -3462,6 +3569,27 @@ Project
   max-width: 660px;
 }
 
+.add-faq-btn {
+  border-radius: 100px;
+  background-color: #3C7EFF;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  width: 166px;
+  margin-bottom: 48px;
+  cursor: pointer;;
+}
+
+.add-faq {
+  display: none;
+}
+
 .p-course-cv {
   padding-bottom: 100px;
 }
@@ -3578,7 +3706,7 @@ Project
   align-items: center;
   border: 0.5px solid #C4C4C4;
   display: flex;
-  font-size: clamp(17px, 1.3888888889vw, 20px);
+  font-size: clamp(16px, 1.3888888889vw, 20px);
   font-weight: bold;
   justify-content: center;
   line-height: 1.45;
@@ -3619,7 +3747,7 @@ Project
   display: flex;
   flex-wrap: wrap;
   gap: 36px 13px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .p-entry-flow__item {
@@ -3638,7 +3766,7 @@ Project
   transform: translate(-50%, -50%);
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   z-index: 1;
 }
 
@@ -3666,7 +3794,7 @@ Project
   transform: translate(-50%, -50%);
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 .p-entry-price {
@@ -5817,12 +5945,17 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .desktop-header-wrapper .header-item {
+  .desktop-header-wrapper .header-item, .header-item {
     margin-top: calc(6.4vw);
   }
 }
+.header-item {
+  font-family: europa,游ゴシック体,"Yu Gothic",YuGothic,Helvetica,Arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",Meiryo,メイリオ,sans-serif;
+  display: block;
+  cursor: pointer;
+}
 
-.desktop-header-wrapper .header-item-main-text {
+.desktop-header-wrapper .header-item-main-text, .header-item-main-text {
   font-weight: bold;
 }
 
@@ -5847,7 +5980,7 @@ Project
 }
 
 @media only screen and (max-width: 450px) {
-  .desktop-header-wrapper .header-item-main-text {
+ .header-item-main-text {
     font-family: europa, sans-serif;
     font-size: calc(5.6vw);
     letter-spacing: calc(0.47467vw);
@@ -5855,7 +5988,7 @@ Project
   }
 }
 
-.desktop-header-wrapper .header-item-sub-text {
+.desktop-header-wrapper .header-item-sub-text, .header-item-sub-text {
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
 }
 
@@ -5883,13 +6016,22 @@ Project
     line-height: 1;
     margin-top: calc(2.13333vw);
   }
+   .header-item-sub-text {
+    font-size: calc(3.2vw);
+    letter-spacing: calc(0.47467vw);
+    line-height: 1;
+    margin-top: calc(2.13333vw);
+  }
+  .sidebar-buttons {
+    margin-top: calc(10.66667vw);
+  }
 }
 
 .navigation-trial-button {
   display: block;
   text-decoration: none;
   font-family: europa, 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-  background: #1F2C32;
+  background: #FF8227;
   color: white;
   position: relative;
   cursor: pointer;
@@ -6239,6 +6381,59 @@ Project
 
   .mobile-header {
     display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: calc(3.26667vw) 0 0 calc(4.26667vw);
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .openbtn7{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background-color: #ffffff;
+    cursor: pointer;
+      width: 50px;
+      height:50px;
+    border-radius: 5px;
+    z-index: 502;
+    margin-left: 5px;
+  }
+  
+  /*ボタン内側*/
+  
+  .openbtn7 .openbtn-area{
+      transition: all .4s;
+  }
+  
+  .openbtn7 span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 1.5px;
+      border-radius: 2px;
+    background: #000;
+      width: 45%;
+    }
+  
+  
+  .openbtn7 span:nth-of-type(1) {
+    top:15px; 
+  }
+  
+  .openbtn7 span:nth-of-type(2) {
+    top:23px;
+  }
+  
+  .openbtn7 span:nth-of-type(3) {
+    top:31px;
   }
 }
 
@@ -6309,13 +6504,13 @@ Project
 
 @media only screen and (min-width: 450px) and (max-width: 1200px) {
   .sidebar-inner {
-    padding: 0 32px 32px;
+    padding: calc(10.53333vw) 32px 32px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .sidebar-inner {
-    padding: 0 calc(8.53333vw) calc(4.26667vw);
+    padding: 64px calc(8.53333vw) calc(4.26667vw);
   }
 }
 
@@ -6463,6 +6658,12 @@ Project
   color: #9F8D51;
 }
 
+.client-section {
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
 .first-view-main {
   max-width: 1400px;
   width: 90%;
@@ -6504,9 +6705,16 @@ Project
     margin: 0 auto;
   }  
 }
-
 .first-view {
-  width: 100%;
+  
+  position: relative;
+  padding: 0;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+}
+
+@media screen and (min-width: 451px) {
+  .first-view {
+    width: 100%;
   height: 888px;
   min-height: 717px;
   display: -webkit-box;
@@ -6522,9 +6730,7 @@ Project
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  padding: 0;
-  font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -6534,9 +6740,10 @@ Project
 }
 
 @media only screen and (max-width: 1199px) {
-  img.first-view-pc-image {
+  img.first-view-pc-image, .first-view-pc {
     display: none;
   }
+  
 }
 
 .first-view-trial-btn-wrapper .trial-button {
@@ -6545,10 +6752,52 @@ Project
   box-shadow: 0px 6.273105621337891px 0px 0px #AE6430;
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (min-width:376px) and ( max-width:450px) {
+  /*　画面サイズが768pxから1024pxまではここを読み込む　*/
   .first-view {
-    height: 80vh;
-    min-height: 568px;
+    width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  }
+  .first-view-sp-image {
+    
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .first-view {
+    width: 100%;
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  }
+  .first-view-sp-image {
+    
+    top: 0;
   }
 }
 
@@ -6610,6 +6859,11 @@ Project
     padding-right: calc(2.13333vw);
     padding-top: 6px;
   }
+  .career-image {
+    width: 45%;
+  }
+  
+  
 }
 
 .first-view-trial-btn-wrapper .trial-button div:last-child {
@@ -6672,6 +6926,21 @@ Project
 @media only screen and (max-width: 450px) {
   .first-view .first-view-main {
     margin: calc(8vw) auto 0;
+  }
+  .first-view-trial-btn-wrapper .trial-button span {
+    font-size: 16px;
+  position: absolute;
+  background-color: white;
+  border: 2px solid #FF8227;
+  color: #FF8227;
+  top: -18px;
+  height: 36px;
+  margin: 0 auto;
+  line-height: 31px;
+  border-radius: 50px;
+  width: auto;
+  padding: 1px 24px 0;
+  text-align: center;
   }
 }
 
@@ -6812,7 +7081,7 @@ Project
   display: block;
   text-decoration: none;
   font-family: europa, 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
-  background: #1F2C32;
+  background: #FF8227;
   color: white;
   position: relative;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.13);
@@ -6888,8 +7157,14 @@ Project
     margin: 0 auto;
     width: calc(86.93333vw);
   }
+  .video-wrapper {
+  position: absolute;
+    top: 0 !important;
+    margin-top: 64px;
+  }
 }
 
+@media screen and (min-width: 451px) {
 .video-wrapper {
   position: absolute;
   width: 100%;
@@ -6908,9 +7183,18 @@ Project
   -o-object-fit: cover;
      object-fit: cover;
 }
+	.video-wrapper img {
+  height: 800px;
+  width: auto;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+}
+
 
 .video-wrapper img {
-  height: 800px;
+  
   width: auto;
   top: 0;
   left: 0;
@@ -6980,6 +7264,7 @@ Project
     letter-spacing: calc(0.44533vw);
     line-height: calc(7.2vw);
     font-weight: 600;
+    text-align: center;
   }
 }
 
@@ -7364,6 +7649,12 @@ padding-left: 100px !important;
   margin-top: 60px;
   padding-top: 30px;
   margin-bottom: 60px;
+}
+@media only screen and (max-width: 450px) {
+  .background-gray {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 #section-about-vision {
@@ -8423,6 +8714,9 @@ padding-left: 100px !important;
  font-size: 1.2em;
  line-height: 1.7;
  margin: 0 0 4px 0;
+ position: relative;
+ border-bottom: 2px solid #3C7EFF;
+ cursor: pointer;
 }
 #s_donate_body ul.qa li p.ttl span.icn {
 	display: inline-block;
@@ -8436,6 +8730,17 @@ padding-left: 100px !important;
  position: relative;
  top: -5px;
 }
+.icn-open {
+  position: absolute;
+  right: 0;
+  color: #3C7EFF;
+ font-size: 1.2em;
+ font-style: italic;
+ font-weight: 500;
+ letter-spacing: 2px;
+ vertical-align: top;
+ top: -5px;
+}
 #s_donate_body ul.qa li p.ttl span.txt {
 	display: inline-block;
 	width: 742px;
@@ -8444,6 +8749,9 @@ padding-left: 100px !important;
 #s_donate_body ul.qa li p.a {
 	font-size: 1em;
 	line-height: 2;
+}
+.answer {
+  display: none;
 }
 #s_donate_body ul.qa li p.a strong {
 	font-weight: bold;
@@ -8479,6 +8787,19 @@ padding-left: 100px !important;
 	 position: relative;
 	 top: -1px;
 	}
+  .icn-open {
+    display: inline-block;
+		width: 17%;
+	 color: #3C7EFF;
+	 font-size: 1.6em;
+	 font-style: italic;
+	 font-weight: 500;
+	 line-height: 1;
+	 letter-spacing: 2px;
+	 vertical-align: top;
+	 position: relative;
+	 top: -1px;
+  }
 	#s_donate_body ul.qa li p.ttl span.txt {
 		display: inline-block;
 		width: 83%;
