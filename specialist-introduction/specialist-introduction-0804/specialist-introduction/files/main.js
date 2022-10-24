@@ -38,7 +38,7 @@ jQuery(function($) {
     });
   });
 
-  $(".openbtn7").click(function () {
+  $(".openbtn7, .sidebar-inner-a").click(function () {
     $(this).toggleClass('active');
     $('.sidebar-overlay').toggleClass('open');
     $('.sidebar').toggleClass('open');
